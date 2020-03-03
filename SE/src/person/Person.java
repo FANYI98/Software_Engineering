@@ -1,21 +1,20 @@
-package Storagefile;
+package person;
 
 public class Person {
 
 	private Date dob; // date of birth
 	private String name;
 
-
-
 	protected Person(Date dob, String name) {
 		this.dob = dob;
-	
+
 		this.name = name;
 	}
+
 	protected Person() {
-		
+
 	}
-	
+
 	public Date getDob() {
 		return dob;
 	}
@@ -32,9 +31,7 @@ public class Person {
 		this.name = name;
 	}
 
-	
-
 	public void print() {
-		System.out.println(name + " :" +dob);
+		System.out.println(name + " :" + dob);
 	}
 }

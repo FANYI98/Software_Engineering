@@ -1,6 +1,6 @@
-package Storagefile;
+package storagefile;
 
-public class Test_database {
+public class TestDatabase {
  public static void main (String args[]) {
 
 //  Teacher t1 = new Teacher(1,new Date(1,2,1997),"Tom","programmer");
@@ -20,9 +20,9 @@ public class Test_database {
 //  
 //  System.out.println();
 //  System.out.println("Read from Files========================");
-
-  Read_File.readinfo();
-
+//
+//  Read_File.readinfo();
+//
 //  for (int i=0;i< Read_File.teacherlist.size();i++) {
 //	  Teacher teacher=Read_File.teacherlist.get(i);
 //	  if (teacher.getId()==1) {

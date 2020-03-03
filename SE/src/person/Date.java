@@ -1,18 +1,18 @@
-package Storagefile;
+package person;
 
 public class Date {
 	private int day;
 	private int month;
 	private int year;
-	
-	//contibutor
+
 	public Date(int day, int month, int year) {
 		this.day = day;
 		this.month = month;
 		this.year = year;
 	}
+
 	public Date() {
-		
+
 	}
 
 	public int getDay() {
@@ -38,6 +38,5 @@ public class Date {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	
-	
+
 }

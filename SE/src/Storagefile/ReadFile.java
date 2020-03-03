@@ -1,4 +1,4 @@
-package Storagefile;
+package storagefile;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,9 +9,11 @@ import org.apache.commons.io.FileUtils;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import staff.Teacher;
 
-//read info from Json file to instantiate classes
-public class Read_File{
+//read info from Json file to instantiate classes/teachers info
+
+public class ReadFile{
 	//files which contains the info of staff and classes.
 	public static final String teacherpath=System.getProperty("user.dir")+"/src/teacher.json";
 	public static final String classpath=System.getProperty("user.dir")+"/src/class.json";
@@ -24,13 +26,16 @@ public class Read_File{
 			String s1;
 			String s2;
 			try {
+				
+				//read .json into string
 				s1 = FileUtils.readFileToString(new File(teacherpath));
 				s2 = FileUtils.readFileToString(new File(classpath));
+//				change string into json array
 				JSONArray jArray1=JSONArray.fromObject(s1);
 				JSONArray jArray2=JSONArray.fromObject(s2);
 //				System.out.println(jArray1);
 //				System.out.println(jArray2);
-				//traverse 
+				//Change json array into teacher/class array
 				for(int i=0;i<jArray1.size();i++) {
 					JSONObject json=(JSONObject)jArray1.get(i) ;
 					Teacher teacher=(Teacher)JSONObject.toBean(json,Teacher.class);

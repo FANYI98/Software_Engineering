@@ -1,4 +1,4 @@
-package Storagefile;
+package storagefile;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -14,10 +14,12 @@ import net.sf.json.JSONObject;
 
 public class Requirement {
 	public static final String requirementpath=System.getProperty("user.dir")+"/src/requirement.json";
-	//create list to store teacher/class information
+	//create list to requirements' info
 	public static List<Requirement> requirementlist=new ArrayList<Requirement>();
 	private Class class_info;
 	private String status=null;
+	
+	
 	public String getStatus() {
 		return status;
 	}
@@ -38,6 +40,7 @@ public class Requirement {
 		this.class_info = class_info;
 	}
 	
+	
 	public static void save() {	
 		JSONArray iArray=JSONArray.fromObject(Requirement.requirementlist);
 //		System.out.println(iArray);
@@ -57,13 +60,12 @@ public class Requirement {
 	}
 	
 	public static void read() {
-		
 		String s;
 		try {
 			s = FileUtils.readFileToString(new File(requirementpath));
 			JSONArray jArray1=JSONArray.fromObject(s);
 //			System.out.println(jArray1);
-			//traverse 
+
 			
 			for(int i=0;i<jArray1.size();i++) {
 				JSONObject json=(JSONObject)jArray1.get(i) ;

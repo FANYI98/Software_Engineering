@@ -1,4 +1,7 @@
-package Storagefile;
+package staff;
+
+import person.Date;
+import person.Person;
 
 public class Teacher extends Person{
 	private String major;
@@ -28,6 +31,6 @@ public class Teacher extends Person{
 	}
 	public void print() {
 
-		System.out.println("ID:"+getId()+" "+getName() + " :" +String.format("%02d/%02d/%4d", this.getDob().getDay(), this.getDob().getMonth(), this.getDob().getYear())+" "+major);
+		System.out.println(getName() + " :" +String.format("%02d/%02d/%4d", this.getDob().getDay(), this.getDob().getMonth(), this.getDob().getYear())+" "+major);
 	}
 }

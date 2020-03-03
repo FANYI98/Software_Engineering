@@ -1,4 +1,6 @@
-package Storagefile;
+package storagefile;
+
+import staff.Teacher;
 
 public class Class {
 	private Teacher teacher;
@@ -71,10 +73,10 @@ public class Class {
 		this.major = major;
 	}
 	public void print() {
-		System.out.println("-------------------------------------------");
+		System.out.println("-------------------------------------");
 
-		System.out.println("Title:"+title+" "+" Location:"+location+ " Time:"+time);
-		System.out.print("Teacher: ");
+		System.out.println("Title:"+title+"     "+" Location:"+location+ "     Time: "+time);
+		System.out.println("Teacher: ");
 		if (this.teacher!=null)
 		teacher.print();
 		System.out.println("Brief intro: "+brief_intro);
