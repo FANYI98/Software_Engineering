@@ -7,7 +7,7 @@ public class Teacher extends Person{
 	private String major;
 	private int id;
 	//constructor
-	protected Teacher(int id, Date dob, String name, String major) {
+	public Teacher(int id, Date dob, String name, String major) {
 		super(dob, name);
 		this.major=major;
 		this.id=id;

@@ -89,10 +89,8 @@ public class TestProducerequire {
 						} else if (s11.equals("2")) {
 							System.out.println("Please rate the training teacher... ");
 							Administrator.processTraining();
-						} else if (s11.equals("exit")) {
+						} else {
 							break;
-						}else {
-							System.out.println("Please enter a correct command!");
 						}
 					}
 				} else {

@@ -1,21 +1,24 @@
-package storagefile;
-
-public class TestDatabase {
- public static void main (String args[]) {
-
+//package storagefile;
+//
+//import person.Date;
+//import staff.Teacher;
+//
+//public class TestDatabase {
+// public static void main (String args[]) {
+//
 //  Teacher t1 = new Teacher(1,new Date(1,2,1997),"Tom","programmer");
 //  Teacher t2 = new Teacher(2,new Date(2,3,1988),"Anna","security");
 //  Teacher t3 = new Teacher(3,new Date(4,5,1997),"John","programmer");
 //  Teacher t4 = new Teacher(4,new Date(6,7,1997),"Susan","math");  
-//  Read_File.teacherlist.add(t1);
-//  Read_File.teacherlist.add(t2);
-//  Read_File.teacherlist.add(t3);
-//  Read_File.teacherlist.add(t4); 
+//  ReadFile.teacherlist.add(t1);
+//  ReadFile.teacherlist.add(t2);
+//  ReadFile.teacherlist.add(t3);
+//  ReadFile.teacherlist.add(t4); 
 //  
 //  Class c1 = new Class("AP","MainBuilding","Tuesday 11-12",null,"This Brief Info","Programmer");
-//  Read_File.classlist.add(c1);
+//  ReadFile.classlist.add(c1);
 //  
-//  Write_File.writeinfo();
+//  WriteFile.writeInfo();
 //  
 //  
 //  System.out.println();
@@ -35,8 +38,8 @@ public class TestDatabase {
 //  }
 //  Write_File.writeinfo();
 //  System.out.println("refresh teachers info-----------------------------");
-//  Read_File.readinfo();
-
-
- }
-}
+////  Read_File.readinfo();
+//
+//
+// }
+//}
